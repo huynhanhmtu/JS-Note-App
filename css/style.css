@@ -159,15 +159,19 @@ body {
     font-size: 12px;
   }
   .sidebar {
-    width: 150px;
+    width: 130px;
     padding: 0.5em;
   }
   .sidebar__title {
     padding: 2px;
     font-size: 1.2em;
   }
+  .sidebar__body{
+    font-weight: normal;
+  }
   .sidebar__updated {
-    font-size: 0.8em;
+    padding: 2px;
+    font-size: 0.7em;
   }
   .sidebar__btn,
   .preview__title {
@@ -178,11 +182,11 @@ body {
   }
   .preview__title {
     margin-bottom: 1em;
-    padding: 0.75em;
+    padding: 0.75em 0.2em;
   }
   .preview__body {
     margin: 0 0 1em;
-    padding: 0 0 0 1.5em;
+    padding: 0 0 0 0.5em;
   }
   .preview__btn {
     font-size: 1em;
