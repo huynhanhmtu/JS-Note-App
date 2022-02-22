@@ -2,13 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 html,
 body {
   height: 100%;
   margin: 0;
-  font-size: 14px;
 }
 
 .notes {
@@ -35,7 +35,7 @@ body {
   border-radius: 7px;
   color: #000000;
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: bold;
   margin-bottom: 1em;
   padding: 0.75em 0;
@@ -45,7 +45,7 @@ body {
   width: auto;
   margin: auto;
   padding: 0.75em;
-  font-size: 1.2em;
+  font-size: 1em;
   background: #eeeeee;
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 .sidebar__title {
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 
 .sidebar__body {
@@ -81,10 +81,11 @@ body {
 }
 
 .sidebar__updated {
-  font-size: 11px;
-  color: #aaaaaa;
+  font-size: 0.8em;
+  font-weight: normal;
   font-style: italic;
   text-align: right;
+  color: #aaaaaa;
 }
 
 .preview {
@@ -102,15 +103,41 @@ body {
 }
 
 .preview__title {
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: bold;
 }
 
 .preview__body {
   flex-grow: 1;
-  font-size: 1em;
   line-height: 1.5;
-  margin-top: 1em;
+  margin: 1em 0;
   padding-left: 2em;
   resize: none;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 576px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .notes * {
+    font-size: 12px;
+  }
+  .sidebar {
+    width: 200px;
+  }
+  .sidebar__updated {
+    font-size: 0.8em;
+  }
+  .sidebar__btn,
+  .preview__title {
+    font-size: 1.4em;
+  }
+  .preview__btn {
+    font-size: 1em;
+  }
+  .sidebar__title {
+    font-size: 1.2em;
+  }
 }
