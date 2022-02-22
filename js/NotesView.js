@@ -52,7 +52,7 @@ export default class NotesView {
           ${body.length > MAX_BODY_LENGTH ? "..." : ""}
         </div>
         <div class="sidebar__updated">
-          Last updated: ${timeUpdated.toLocaleString(undefined, { dateStyle: "full", timeStyle: "short" })}
+          ${timeUpdated.toLocaleString(undefined, { dateStyle: "full", timeStyle: "short" })}
         </div>
       </div>
     `
