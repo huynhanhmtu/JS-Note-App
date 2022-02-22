@@ -1,0 +1,33 @@
+- <script src="./js/index.js" type="module"></script>
+  strict mode bật mặt định
+  Kiểu viết comment như trong HTML không sử dụng được
+  Một điều tuyệt vời khác của type="module" là mặc dù chúng ta add thêm bao nhiêu tag tùy thích nhưng nó sẽ chỉ load 1 file nếu giống nhau, ngược lại với js thường
+    <script src="classic.js"></script>
+    <script src="classic.js"></script>
+    <!-- classic.js executes multiple times. -->
+
+    <script type="module" src="module.mjs"></script>
+    <script type="module" src="module.mjs"></script>
+    <script type="module">import './module.mjs';</script>
+    <!-- module.mjs executes only once. -->
+  Từ khoá export và import chỉ sử dụng được ở modules mà không gọi được ở JavaScript thông thường.
+=> Sử dụng type="module" để có thể import các file js vào index.js mà chỉ cần khai báo index.js ở html
+
+- static trong class ?
+So sánh với cách khai báo function trong class mà không có static
+
+- Khai báo và sử dụng localStorage
+  localStorage.setItem("_localName", JSON.stringtify(_data));
+  JSON.parse(localStorage.getItem("_localName")) => tạo biến để nhận giá trị trả về
+
+- array.sort(()=>{...})
+compareFunction(a, b) return value	    sort order
+> 0	sort                                b before a
+< 0	sort                                a before b
+=== 0	                                  keep original order of a and b
+
+- event "blur" (onBlur), event "dblclick"
+- string.substring(start, end)
+- time.toLocaleString(undefined, { dateStyle: "full", timeStyle: "short" })
+- DOM.insertAdjacentHTML(position, text)
+- data- prefix => dataset
