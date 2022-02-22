@@ -117,6 +117,39 @@ body {
 }
 
 /* RESPONSIVE */
+@media screen and (max-width: 992px) {
+  .sidebar {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .notes * {
+    font-size: 12px;
+  }
+  .sidebar {
+    width: 200px;
+    padding: 0.8em;
+  }
+  .sidebar__title {
+    padding: 5px;
+  }
+  .sidebar__updated {
+    font-size: 0.9em;
+  }
+  .preview {
+    padding: 0.8em;
+  }
+  .preview__title {
+    padding: 0.8em;
+  }
+  .preview__btn {
+    font-size: 1em;
+  }
+}
 @media screen and (max-width: 576px) {
   html,
   body {
